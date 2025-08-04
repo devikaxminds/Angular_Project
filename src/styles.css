@@ -1,0 +1,19 @@
+/* You can add global styles to this file, and also import other style files */
+/* Reset some default browser styles */
+body, h1, h2, h3, h4, h5, h6, p, ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Apply a modern font globally */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #ebe8c7;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Smooth scroll behavior globally */
+html {
+  scroll-behavior: smooth;
+}

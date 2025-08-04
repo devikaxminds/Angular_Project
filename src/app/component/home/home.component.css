@@ -1,0 +1,22 @@
+.home-container {
+  text-align: center;
+  margin-top: 50px;
+  padding: 20px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #42a5f5, #478ed1);
+  color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.home-container h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.home-container p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
