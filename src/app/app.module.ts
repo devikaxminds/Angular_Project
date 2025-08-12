@@ -7,6 +7,8 @@ import { HomeComponent } from './component/home/home.component';
 import { ButtonComponent } from './component/button/button.component';
 import { CounterComponent } from './counter/counter.component';
 import { ToggleButtonComponent } from './toggle-button/toggle-button.component';
+import { RegistrationComponent } from './registration/registration.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -14,11 +16,13 @@ import { ToggleButtonComponent } from './toggle-button/toggle-button.component';
     HomeComponent,
     ButtonComponent,
     CounterComponent,
-    ToggleButtonComponent
+    ToggleButtonComponent,
+    RegistrationComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [
     provideClientHydration()
