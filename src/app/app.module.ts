@@ -9,6 +9,8 @@ import { CounterComponent } from './counter/counter.component';
 import { ToggleButtonComponent } from './toggle-button/toggle-button.component';
 import { RegistrationComponent } from './registration/registration.component';
 import { FormsModule } from '@angular/forms';
+import { EmployeeComponent } from './employee/employee.component';
+import { EmployeeViewComponent } from './employee/employee-view/employee-view.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { FormsModule } from '@angular/forms';
     ButtonComponent,
     CounterComponent,
     ToggleButtonComponent,
-    RegistrationComponent
+    RegistrationComponent,
+    EmployeeComponent,
+    EmployeeViewComponent
   ],
   imports: [
     BrowserModule,
