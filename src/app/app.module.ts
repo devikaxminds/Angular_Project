@@ -11,6 +11,8 @@ import { RegistrationComponent } from './registration/registration.component';
 import { FormsModule } from '@angular/forms';
 import { EmployeeComponent } from './employee/employee.component';
 import { EmployeeViewComponent } from './employee/employee-view/employee-view.component';
+import { LibraryComponent } from './library/library.component';
+import { BookSelectorComponent } from './library/book-selector/book-selector.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { EmployeeViewComponent } from './employee/employee-view/employee-view.co
     ToggleButtonComponent,
     RegistrationComponent,
     EmployeeComponent,
-    EmployeeViewComponent
+    EmployeeViewComponent,
+    LibraryComponent,
+    BookSelectorComponent
   ],
   imports: [
     BrowserModule,

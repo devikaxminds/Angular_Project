@@ -1,0 +1,7 @@
+<p>---------Output decorator-----------</p>
+<h2>Library</h2>
+<app-book-selector (bookSelected)="onBookSelected($event)"></app-book-selector>
+
+<div *ngIf="selectedBook">
+  <h3>You selected: {{ selectedBook }}</h3>
+</div>

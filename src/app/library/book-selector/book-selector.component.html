@@ -1,0 +1,4 @@
+<label for="book">Choose a book:</label>
+<select id="book" (change)="onBookChange($event)">
+  <option *ngFor="let book of books" [value]="book">{{ book }}</option>
+</select>
