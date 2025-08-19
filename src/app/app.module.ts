@@ -13,6 +13,8 @@ import { EmployeeComponent } from './employee/employee.component';
 import { EmployeeViewComponent } from './employee/employee-view/employee-view.component';
 import { LibraryComponent } from './library/library.component';
 import { BookSelectorComponent } from './library/book-selector/book-selector.component';
+import { EmployeeSearchComponent } from './employee-search/employee-search.component';
+import { EmployeeListComponent } from './employee-list/employee-list.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import { BookSelectorComponent } from './library/book-selector/book-selector.com
     EmployeeComponent,
     EmployeeViewComponent,
     LibraryComponent,
-    BookSelectorComponent
+    BookSelectorComponent,
+    EmployeeSearchComponent,
+    EmployeeListComponent
   ],
   imports: [
     BrowserModule,

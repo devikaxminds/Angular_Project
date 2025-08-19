@@ -1,0 +1,11 @@
+<h2>Employee-list</h2>
+<div>
+  <input type="text" [(ngModel)]="searchTerm" placeholder="Search employee by name">
+  <button (click)="search()">Search</button>
+</div>
+
+<ul>
+  <li *ngFor="let emp of employees" #empItem>
+    {{ emp }}
+  </li>
+</ul>

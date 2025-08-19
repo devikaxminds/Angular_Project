@@ -1,0 +1,16 @@
+<div class="p-4">
+  <h2>Employee Search</h2>
+
+  <!-- Input field with template reference variable -->
+  <input type="text" #searchInput placeholder="Enter employee name" />
+  <button (click)="searchEmployee()">Search</button>
+
+  <!-- Show result -->
+  <div *ngIf="foundEmployee" class="result">
+    <p><b>ID:</b> {{ foundEmployee.id }}</p>
+    <p><b>Name:</b> {{ foundEmployee.name }}</p>
+    <p><b>Position:</b> {{ foundEmployee.position }}</p>
+  </div>
+
+  <p *ngIf="notFound" style="color: red;">Employee not found!</p>
+</div>
