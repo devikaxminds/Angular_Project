@@ -5,7 +5,18 @@
 </div>
 
 <ul>
-  <li *ngFor="let emp of employees" #empItem>
-    {{ emp }}
+  <li *ngFor="let emp of employees" 
+      #empItem 
+      (click)="onSelect(emp)"
+      [style.cursor]="'pointer'"
+      [style.padding]="'10px'"
+      [style.border]="'1px solid gray'"
+      [style.margin-bottom]="'2px'"
+      [style.background-color]="selectedEmployee?.id === emp.id ? 'lightblue' : 'white'">
+    {{ emp.name }}
   </li>
 </ul>
+
+<div style="margin-top: 20px;">
+  <app-employee-detail [employee]="selectedEmployee"></app-employee-detail>
+</div>

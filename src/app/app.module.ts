@@ -15,6 +15,7 @@ import { LibraryComponent } from './library/library.component';
 import { BookSelectorComponent } from './library/book-selector/book-selector.component';
 import { EmployeeSearchComponent } from './employee-search/employee-search.component';
 import { EmployeeListComponent } from './employee-list/employee-list.component';
+import { EmployeeDetailComponent } from './employee-list/employee-detail/employee-detail.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { EmployeeListComponent } from './employee-list/employee-list.component';
     LibraryComponent,
     BookSelectorComponent,
     EmployeeSearchComponent,
-    EmployeeListComponent
+    EmployeeListComponent,
+    EmployeeDetailComponent
   ],
   imports: [
     BrowserModule,

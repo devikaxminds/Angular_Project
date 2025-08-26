@@ -1,0 +1,17 @@
+<div class="employee-detail">
+  <h3>Employee Details</h3>
+  
+  <div *ngIf="employee; else noSelection">
+    <div class="detail-card">
+      <p><strong>ID:</strong> {{ employee.id }}</p>
+      <p><strong>Name:</strong> {{ employee.name }}</p>
+      <p><strong>Position:</strong> {{ employee.position }}</p>
+      <p><strong>Department:</strong> {{ employee.department }}</p>
+      <p><strong>Email:</strong> {{ employee.email }}</p>
+    </div>
+  </div>
+
+  <ng-template #noSelection>
+    <p>Please select an employee to view details</p>
+  </ng-template>
+</div>
