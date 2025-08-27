@@ -16,6 +16,7 @@ import { BookSelectorComponent } from './library/book-selector/book-selector.com
 import { EmployeeSearchComponent } from './employee-search/employee-search.component';
 import { EmployeeListComponent } from './employee-list/employee-list.component';
 import { EmployeeDetailComponent } from './employee-list/employee-detail/employee-detail.component';
+import { ChatComponent } from './chat/chat.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { EmployeeDetailComponent } from './employee-list/employee-detail/employe
     BookSelectorComponent,
     EmployeeSearchComponent,
     EmployeeListComponent,
-    EmployeeDetailComponent
+    EmployeeDetailComponent,
+    ChatComponent
   ],
   imports: [
     BrowserModule,
