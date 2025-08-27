@@ -17,6 +17,7 @@ import { EmployeeSearchComponent } from './employee-search/employee-search.compo
 import { EmployeeListComponent } from './employee-list/employee-list.component';
 import { EmployeeDetailComponent } from './employee-list/employee-detail/employee-detail.component';
 import { ChatComponent } from './chat/chat.component';
+import { BookSearchComponent } from './book-search/book-search.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { ChatComponent } from './chat/chat.component';
     EmployeeSearchComponent,
     EmployeeListComponent,
     EmployeeDetailComponent,
-    ChatComponent
+    ChatComponent,
+    BookSearchComponent
   ],
   imports: [
     BrowserModule,

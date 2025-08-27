@@ -1,0 +1,68 @@
+<div class="book-search-container">
+  <div class="search-header">
+    <h2>📚 Book Search Application</h2>
+    <p>Search for books by title, author, genre, or year</p>
+  </div>
+
+  <div class="search-section">
+    <div class="search-input-wrapper">
+      <input 
+        #searchInput
+        type="text" 
+        [(ngModel)]="searchTerm" 
+        (input)="onSearchInputChange()"
+        (keyup.enter)="onSearch()"
+        placeholder="🔍 Search books..."
+        class="search-input"
+        autocomplete="off">
+      
+      <button 
+        *ngIf="searchTerm" 
+        (click)="clearSearch()" 
+        class="clear-btn"
+        title="Clear search">
+        ✕
+      </button>
+    </div>
+    
+    <button (click)="onSearch()" class="search-btn">
+      Search
+    </button>
+  </div>
+
+  <div class="results-section">
+    <div class="results-header">
+      <h3>Search Results</h3>
+      <span class="results-count">
+        {{ filteredBooks.length }} book{{ filteredBooks.length !== 1 ? 's' : '' }} found
+      </span>
+    </div>
+
+    <div *ngIf="filteredBooks.length === 0 && searchTerm" class="no-results">
+      <div class="no-results-icon">📖</div>
+      <h4>No books found</h4>
+      <p>Try searching with different keywords or check your spelling.</p>
+    </div>
+
+    <div class="books-grid">
+      <div *ngFor="let book of filteredBooks" class="book-card">
+        <div class="book-header">
+          <h4 class="book-title">{{ book.title }}</h4>
+          <span class="book-year">{{ book.year }}</span>
+        </div>
+        
+        <div class="book-details">
+          <p class="book-author">
+            <strong>Author:</strong> {{ book.author }}
+          </p>
+          <p class="book-genre">
+            <strong>Genre:</strong> {{ book.genre }}
+          </p>
+          <p class="book-isbn">
+            <strong>ISBN:</strong> {{ book.isbn }}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
