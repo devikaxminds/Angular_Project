@@ -18,6 +18,8 @@ import { EmployeeListComponent } from './employee-list/employee-list.component';
 import { EmployeeDetailComponent } from './employee-list/employee-detail/employee-detail.component';
 import { ChatComponent } from './chat/chat.component';
 import { BookSearchComponent } from './book-search/book-search.component';
+import { HightlightDirective } from './hightlight.directive';
+import { ColorChangeComponent } from './color-change/color-change.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +37,9 @@ import { BookSearchComponent } from './book-search/book-search.component';
     EmployeeListComponent,
     EmployeeDetailComponent,
     ChatComponent,
-    BookSearchComponent
+    BookSearchComponent,
+    HightlightDirective,
+    ColorChangeComponent
   ],
   imports: [
     BrowserModule,
