@@ -20,6 +20,7 @@ import { ChatComponent } from './chat/chat.component';
 import { BookSearchComponent } from './book-search/book-search.component';
 import { HightlightDirective } from './hightlight.directive';
 import { ColorChangeComponent } from './color-change/color-change.component';
+import { BookComponent } from './book/book.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { ColorChangeComponent } from './color-change/color-change.component';
     ChatComponent,
     BookSearchComponent,
     HightlightDirective,
-    ColorChangeComponent
+    ColorChangeComponent,
+    BookComponent
   ],
   imports: [
     BrowserModule,

@@ -4,7 +4,7 @@ import { Directive, HostListener, HostBinding, Input } from '@angular/core';
   selector: '[appHighlight]'
 })
 export class HightlightDirective {
-  @Input('appHighlight') highlightColor: string = '';
+  @Input('appHighlight') highlightColor: string = 'red';
   @HostBinding('style.backgroundColor') backgroundColor: string = 'white';
 
   @HostListener('mouseenter')
