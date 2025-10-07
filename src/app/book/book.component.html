@@ -1,7 +1,7 @@
 <h2>Books In Stock</h2>
 <ul>
   <li *ngFor="let book of books">
-    <div *ngIf="book.inStock">
+    <div *appInStock="book.inStock">
       <strong>{{ book.title }}</strong> by {{ book.author }} (ID: {{ book.book_id }})
     </div>
   </li>
