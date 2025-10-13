@@ -23,6 +23,7 @@ import { ColorChangeComponent } from './color-change/color-change.component';
 import { BookComponent } from './book/book.component';
 import { InStockDirective } from './in-stock.directive';
 import { NameEmitterComponent } from './name-emitter/name-emitter.component';
+import { ObservableComponent } from './observable/observable.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +46,8 @@ import { NameEmitterComponent } from './name-emitter/name-emitter.component';
     ColorChangeComponent,
     BookComponent,
     InStockDirective,
-    NameEmitterComponent
+    NameEmitterComponent,
+    ObservableComponent
   ],
   imports: [
     BrowserModule,
