@@ -24,6 +24,7 @@ import { BookComponent } from './book/book.component';
 import { InStockDirective } from './in-stock.directive';
 import { NameEmitterComponent } from './name-emitter/name-emitter.component';
 import { ObservableComponent } from './observable/observable.component';
+import { OperatorsComponent } from './operators/operators.component';
 
 @NgModule({
   declarations: [
@@ -47,7 +48,8 @@ import { ObservableComponent } from './observable/observable.component';
     BookComponent,
     InStockDirective,
     NameEmitterComponent,
-    ObservableComponent
+    ObservableComponent,
+    OperatorsComponent,
   ],
   imports: [
     BrowserModule,
